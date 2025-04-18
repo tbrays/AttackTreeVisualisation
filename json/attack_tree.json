@@ -1,0 +1,37 @@
+[
+	{
+		"label": "Root Attack",
+		"parent": "",
+		"gate": "OR"
+	},
+	{
+		"label": "Gain Access",
+		"parent": "Root Attack",
+		"gate": "AND"
+	},
+	{
+		"label": "Phishing",
+		"parent": "Gain Access",
+		"likelihood": 60
+	},
+	{
+		"label": "Exploit Vulnerability",
+		"parent": "Gain Access",
+		"likelihood": 70
+	},
+	{
+		"label": "Social Engineering",
+		"parent": "Root Attack",
+		"gate": "OR"
+	},
+	{
+		"label": "Tailgating",
+		"parent": "Social Engineering",
+		"likelihood": 40
+	},
+	{
+		"label": "Impersonation",
+		"parent": "Social Engineering",
+		"likelihood": 55
+	}
+]

@@ -1,0 +1,82 @@
+[
+	{
+		"label": "Compromise Digital System",
+		"parent": "",
+		"gate": "OR"
+	},
+	{
+		"label": "Identity-Based Threats",
+		"parent": "Compromise Digital System",
+		"gate": "OR"
+	},
+	{
+		"label": "Spoofing",
+		"parent": "Identity-Based Threats",
+		"likelihood": 60
+	},
+	{
+		"label": "Social Engineering Attacks",
+		"parent": "Spoofing",
+		"likelihood": 65
+	},
+	{
+		"label": "Data-Focused Threats",
+		"parent": "Compromise Digital System",
+		"gate": "OR"
+	},
+	{
+		"label": "Tampering",
+		"parent": "Data-Focused Threats",
+		"likelihood": 55
+	},
+	{
+		"label": "Data Manipulation Attacks",
+		"parent": "Tampering",
+		"likelihood": 50
+	},
+	{
+		"label": "Repudiation",
+		"parent": "Data-Focused Threats",
+		"likelihood": 30
+	},
+	{
+		"label": "Log Tampering",
+		"parent": "Repudiation",
+		"likelihood": 25
+	},
+	{
+		"label": "Information Disclosure",
+		"parent": "Data-Focused Threats",
+		"likelihood": 45
+	},
+	{
+		"label": "Unauthorised Data Access",
+		"parent": "Information Disclosure",
+		"likelihood": 50
+	},
+	{
+		"label": "System-Based Threats",
+		"parent": "Compromise Digital System",
+		"gate": "OR"
+	},
+	{
+		"label": "Denial of Service",
+		"parent": "System-Based Threats",
+		"likelihood": 35
+	},
+	{
+		"label": "Service Disruption",
+		"parent": "Denial of Service",
+		"likelihood": 40
+	},
+	{
+		"label": "Elevation of Privilege",
+		"parent": "System-Based Threats",
+		"likelihood": 30
+	},
+	{
+		"label": "Privilege Escalation Attacks",
+		"parent": "Elevation of Privilege",
+		"likelihood": 25
+	}
+]

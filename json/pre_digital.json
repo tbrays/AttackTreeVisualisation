@@ -1,0 +1,87 @@
+[
+	{
+		"label": "Compromise Business Operations",
+		"parent": "",
+		"gate": "OR"
+	},
+	{
+		"label": "Physical Threats",
+		"parent": "Compromise Business Operations",
+		"gate": "OR"
+	},
+	{
+		"label": "Break-in and theft",
+		"parent": "Physical Threats",
+		"likelihood": 30
+	},
+	{
+		"label": "Fire or flood damage",
+		"parent": "Physical Threats",
+		"likelihood": 10
+	},
+	{
+		"label": "Vandalism",
+		"parent": "Physical Threats",
+		"likelihood": 20
+	},
+	{
+		"label": "Insider Threats",
+		"parent": "Compromise Business Operations",
+		"gate": "OR"
+	},
+	{
+		"label": "Employee theft",
+		"parent": "Insider Threats",
+		"likelihood": 40
+	},
+	{
+		"label": "Malicious staff actions",
+		"parent": "Insider Threats",
+		"likelihood": 20
+	},
+	{
+		"label": "Process Failures",
+		"parent": "Compromise Business Operations",
+		"gate": "OR"
+	},
+	{
+		"label": "Loss of paper records",
+		"parent": "Process Failures",
+		"likelihood": 35
+	},
+	{
+		"label": "Reliance on individual staff knowledge",
+		"parent": "Process Failures",
+		"likelihood": 50
+	},
+	{
+		"label": "Supply Chain Disruptions",
+		"parent": "Compromise Business Operations",
+		"gate": "OR"
+	},
+	{
+		"label": "Local supplier delays",
+		"parent": "Supply Chain Disruptions",
+		"likelihood": 45
+	},
+	{
+		"label": "Product shortages",
+		"parent": "Supply Chain Disruptions",
+		"likelihood": 40
+	},
+	{
+		"label": "Customer Service Issues",
+		"parent": "Compromise Business Operations",
+		"gate": "OR"
+	},
+	{
+		"label": "Manual stock errors",
+		"parent": "Customer Service Issues",
+		"likelihood": 30
+	},
+	{
+		"label": "Missed special orders",
+		"parent": "Customer Service Issues",
+		"likelihood": 25
+	}
+]
